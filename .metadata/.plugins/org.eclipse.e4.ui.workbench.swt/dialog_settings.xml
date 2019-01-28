@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ShowViewDialog">
+		<item value="304" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="org.eclipse.m2e.core.views.MavenBuild" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="415" key="DIALOG_HEIGHT"/>
+		<item value="412" key="DIALOG_X_ORIGIN"/>
+		<item value="41" key="DIALOG_Y_ORIGIN"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="Ant"/>
+			<item value="API Tools"/>
+			<item value="Code Recommenders"/>
+			<item value="Data Management"/>
+			<item value="General"/>
+			<item value="Debug"/>
+			<item value="Git"/>
+			<item value="Gradle"/>
+			<item value="Help"/>
+			<item value="Java"/>
+			<item value="Java Browsing"/>
+			<item value="Maven"/>
+			<item value="Mylyn"/>
+		</list>
+	</section>
+</section>

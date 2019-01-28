@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="NYP App Automation Test">
+
+<parameter name="OS" value="Android"/>
+<parameter name="appType" value="Phone"/>
+<parameter name="deviceType" value="Emulator"/>
+<parameter name="deviceName" value="Nexus"/>
+<parameter name="version" value="5.1"/>
+<parameter name="moduleName" value="NYP"/>
+<parameter name="appName" value="nyp2.apk"/>
+<parameter name="appPackage" value="br.com.golmobile.nypost"/>
+<parameter name="appActivity" value="com.wizeline.nypost.ui.collections.NYPCollectionActivity"/><parameter name="appActivity" value="br.com.golmobile"/>
+<test name="GoToHomePage" preserve-order="true">
+    <classes>
+        <class name="home.TestFeatures"/>
+    </classes>
+</test>
+
+</suite>

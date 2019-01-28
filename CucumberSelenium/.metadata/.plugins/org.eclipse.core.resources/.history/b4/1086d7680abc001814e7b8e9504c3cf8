@@ -1,0 +1,206 @@
+package demoHomeTest;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import baseScript.CommonAPI2;
+import cucumber.api.PendingException;
+import cucumber.api.java.Before;
+//import cucumber.api.java.*;
+import cucumber.api.java.en.*;
+import demoHomeApp.DemoApp;
+import demoHomeApp.FactoryDemo;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.remote.MobilePlatform;
+
+public class DemoTest extends CommonAPI2{
+	
+	AppiumDriver ad;
+	String OS = "Android";
+	String appType = "Phone";
+	String deviceType = "Emulator";
+	String deviceName = "Nexus";
+	String version = "5.1";
+	String  moduleName = "StartUp";
+//	String  appName = "Browser.apk";
+	String app = "/Users/eclipse-workspace/CucumbeSeleniumScripts/MobileAutomation/StartUp/src/main/java/App/nyp2.apk";
+	String  appName = "nyp2.apk";
+	String  appPackage = "br.com.golmobile.nypost";
+	String appActivity = "com.wizeline.nypost.ui.collections.NYPCollectionActivity";
+	
+	
+	CommonAPI2 commonAPI2 = new CommonAPI2();
+	
+	FactoryDemo factoryDemo = new FactoryDemo();
+
+	DemoApp demoApp = new DemoApp();
+	
+//	-------------------
+	
+//	AppiumDriver ad;
+//	String deviceType = "Emulator";
+//	String appType = "Phone";
+	String platformName = "Android";
+//	String deviceName = "Nexus";
+	String platformVersion = "5.1";
+	String automationName = "UiAutomator2";
+//	String appName = "Browser.apk";
+//	String appName = "nyp2.apk";
+//	String app = "/Users/eclipse-workspace/CucumbeSeleniumScripts/MobileAutomation/StartUp/src/App/nyp2.apk";
+	String newCommandTimeout = "240";
+//	String appPackage = "br.com.golmobile.nypost";
+	File appDirectory;
+	File findApp;
+//	String OS = "Android";
+//	String version;
+//	String moduleName;
+//	String appActivity;
+//	
+//	CommonAPI2 commonAPI2 = new CommonAPI2();
+	
+//	@Before
+//	public void setUpCuke() throws IOException, InterruptedException {
+//		commonAPI2.setUp(OS, appType, deviceType, deviceName, version, moduleName, appName, appPackage, appActivity);
+//	}
+	
+//	------------------------------------------------------
+	
+	@Before
+    public void setUp()throws IOException,InterruptedException{
+	if(OS.equalsIgnoreCase("ios")){
+	  if(appType.contains("iPhone")){
+	      appDirectory = new File("src/app");
+	      findApp = new File(appDirectory,appName);
+	      if(deviceType.equalsIgnoreCase("RealDevice")){
+	          ad = setUpiOsEnv(deviceName,version);
+	      }else if (deviceType.equalsIgnoreCase("Simulator")){
+	          ad = setUpiOsEnv(deviceName,version);
+	      }
+	  }else if(appType.equalsIgnoreCase("iPad 2")){
+	      appDirectory = new File("src/app");
+	      findApp = new File(appDirectory,appName);
+	      if(deviceType.contains("RealDevice")){
+	          ad = setUpiOsEnv(deviceName,version);
+	      }else if (deviceType.equalsIgnoreCase("Simulator")){
+	          ad = setUpiOsEnv(deviceName,version);
+	      }
+	  }
+	}else if(OS.equalsIgnoreCase("Android")){
+	  if(appType.contains("Phone")){
+	      appDirectory = new File("src/app");
+	      findApp = new File(appDirectory,appName);
+	      if(deviceType.equalsIgnoreCase("RealDevice")){
+	          ad = setUpAndroidEnv(deviceName,version, appActivity, appActivity, appActivity, appActivity, appActivity, appActivity, appActivity);
+	      }else if (deviceType.equalsIgnoreCase("Emulator")){
+	          ad =setUpAndroidEnv(deviceName,version, appActivity, appActivity, appActivity, appActivity, appActivity, appActivity, appActivity);
+	      }
+	  }else if(OS.equalsIgnoreCase("Tablets")){
+	      if(deviceType.equalsIgnoreCase("RealDevice")){
+	          ad = setUpAndroidEnv(deviceName,version, appActivity, appActivity, appActivity, appActivity, appActivity, appActivity, appActivity);
+	      }else if (deviceType.equalsIgnoreCase("Emulator")){
+	          ad = setUpAndroidEnv(deviceName,version, appActivity, appActivity, appActivity, appActivity, appActivity, appActivity, appActivity);
+	      }
+	  }
+	}
+}
+public AppiumDriver setUpiOsEnv(String deviceName,String version)throws IOException,InterruptedException{
+	DesiredCapabilities cap = new DesiredCapabilities();
+	cap.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
+	cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
+	cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, version);
+	cap.setCapability(MobileCapabilityType.APP, findApp.getAbsolutePath());
+	ad = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+	ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	return ad;
+
+}
+public AppiumDriver setUpAndroidEnv(String deviceName,String version, String deviceType, String deviceName2, String version2, String moduleName, String appName, String appPackage, String appActivity)throws IOException,InterruptedException{
+	DesiredCapabilities cap = new DesiredCapabilities();
+	cap.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
+	cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
+	cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, version);
+	cap.setCapability(MobileCapabilityType.APP, findApp.getAbsolutePath());
+	//ad = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+	ad = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), cap);
+	ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	return ad;
+}
+	
+//	------------------------------------------------------
+	
+	@Given("demo app is open")
+	public void demo_app_is_open() {
+	    // Write code here that turns the phrase above into concrete actions
+		//CommonAPI2.element(By.cssSelector("#android.widget.TextView")).click();
+		
+//		try {
+//			factoryDemo.home(ad);
+//		} catch (InterruptedException e1) {
+//			
+//			System.out.println(e1.getMessage());
+//		}
+		
+//		demoApp.clickDemoAppStarter(ad);
+//		try {
+//			factoryDemo.nypContinue(ad);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
+//		try {
+//			demoApp.clickToContinue2(ad);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
+		try {
+		factoryDemo.validateTopStories(ad);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			factoryDemo.validateBusiness(ad);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+//	    throw new PendingException();
+	}
+
+	@When("the user enters username")
+	public void the_user_enters_username() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("the user enters password")
+	public void the_user_enters_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("the user clicks on Sign In button")
+	public void the_user_clicks_on_Sign_In_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("the user will be able to sign into the app ho")
+	public void the_user_will_be_able_to_sign_into_the_app_ho() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+}

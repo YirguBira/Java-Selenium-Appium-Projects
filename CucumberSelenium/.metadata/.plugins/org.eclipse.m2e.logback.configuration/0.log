@@ -1,0 +1,38 @@
+2018-08-18 11:30:37,890 [Worker-7] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-08-18 11:32:56,479 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-14 13:08:14,796 [Worker-7] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-09-14 13:10:11,153 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: MobileAutomation:MobileAutomation:0.0.1-SNAPSHOT @ /Users/eclipse-workspace/CucumbeSeleniumScripts/MobileAutomation/pom.xml.
+2018-09-14 13:13:11,329 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-09-14 13:13:11,944 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: WebTesting:CucumberSelenium:0.0.1-SNAPSHOT @ /Users/eclipse-workspace/CucumbeSeleniumScripts/CucumberSelenium2/pom.xml.
+2018-09-14 13:13:12,090 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: MobileAutomation:MobileAutomation:0.0.1-SNAPSHOT @ /Users/eclipse-workspace/CucumbeSeleniumScripts/MobileAutomation/pom.xml.
+2018-09-14 13:13:12,124 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: MobileAutomation:Facebook:0.0.1-SNAPSHOT @ /Users/eclipse-workspace/CucumbeSeleniumScripts/MobileAutomation/Facebook/pom.xml.
+2018-09-14 13:13:12,150 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: MobileAutomation:Generic:0.0.1-SNAPSHOT @ /Users/eclipse-workspace/CucumbeSeleniumScripts/MobileAutomation/Generic/pom.xml.
+2018-09-14 13:13:12,300 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: MobileAutomation:StartUp:0.0.1-SNAPSHOT @ /Users/eclipse-workspace/CucumbeSeleniumScripts/MobileAutomation/StartUp/pom.xml.
+2018-09-14 13:13:13,316 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CucumberSelenium/src/main/java
+2018-09-14 13:13:13,317 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CucumberSelenium/src/main/resources
+2018-09-14 13:13:13,318 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CucumberSelenium/src/test/java
+2018-09-14 13:13:13,318 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CucumberSelenium/src/test/resources
+2018-09-14 13:13:13,476 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Facebook/src/main/java
+2018-09-14 13:13:13,476 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Facebook/src/main/resources
+2018-09-14 13:13:13,476 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Facebook/src/test/java
+2018-09-14 13:13:13,477 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Facebook/src/test/resources
+2018-09-14 13:13:13,593 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Generic/src/main/java
+2018-09-14 13:13:13,594 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Generic/src/main/resources
+2018-09-14 13:13:13,594 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Generic/src/test/java
+2018-09-14 13:13:13,594 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Generic/src/test/resources
+2018-09-14 13:13:13,921 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StartUp/src/main/java
+2018-09-14 13:13:13,921 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StartUp/src/main/resources
+2018-09-14 13:13:13,921 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StartUp/src/test/java
+2018-09-14 13:13:13,922 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StartUp/src/test/resources
+2018-09-14 13:13:14,823 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2018-09-18 22:08:48,289 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-19 08:32:43,980 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-19 08:32:43,989 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-19 08:32:43,991 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-19 08:32:43,992 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-09-19 08:37:56,833 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-19 08:49:18,205 [Worker-36] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: WebTesting:CucumberSelenium:0.0.1-SNAPSHOT @ /Users/eclipse-workspace/CucumbeSeleniumScripts/CucumberSelenium2/pom.xml.
+2018-09-19 08:49:19,398 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-19 08:49:19,405 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-19 08:49:19,407 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-09-19 08:49:19,409 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources

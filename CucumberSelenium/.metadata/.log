@@ -1,0 +1,417 @@
+!SESSION 2018-08-18 11:30:14.167 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=10.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-08-18 11:30:33.119
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2018-08-18 11:32:47.539 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=10.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data /Users/eclipse-workspace/Projects/CucumberSelenium -product org.eclipse.epp.package.jee.product -keyring /Users/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-08-18 11:32:51.224
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui.ide 4 0 2018-08-18 11:35:25.954
+!MESSAGE Could not import project located at /Users/eclipse-workspace/Projects/CucumberSelenium
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at /Users/eclipse-workspace/Projects/CucumberSelenium
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:557)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:250)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:169)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:263)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:596)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:544)
+	... 2 more
+!SESSION 2018-09-18 22:08:26.729 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=10.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/.eclipse_keyring
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-09-19 08:32:42.864
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: CucumberSelenium
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource already exists on disk: '/CucumberSelenium/target/test-classes/netFlixSignUp.feature'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:328)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:545)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:387)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:231)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:200)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:124)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:403)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:544)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:112)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:430)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2262)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:437)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:130)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2018-09-19 08:32:42.866
+!MESSAGE Resource already exists on disk: '/CucumberSelenium/target/test-classes/netFlixSignUp.feature'.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-19 08:32:43.982
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-19 08:32:43.991
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2018-09-19 08:35:55.496
+!MESSAGE Failed to stream using org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport@14a7d00f - falling back to org.eclipse.epp.internal.mpc.core.util.TransportFactory$1@5ac9e02c: Service Unavailable
+!STACK 1
+org.eclipse.epp.mpc.core.service.ServiceUnavailableException: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:111)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.reportInstallSuccess(DefaultMarketplaceService.java:838)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.reportInstallSuccess(CachingMarketplaceService.java:422)
+	at org.eclipse.epp.internal.mpc.ui.wizards.ProvisioningJobListener$1$1.run(ProvisioningJobListener.java:67)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.apache.http.client.HttpResponseException: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:148)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:134)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:96)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:54)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	... 9 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2018-09-19 08:35:55.496
+!MESSAGE Service Unavailable
+!STACK 0
+org.apache.http.client.HttpResponseException: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:148)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:134)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:96)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:54)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.reportInstallSuccess(DefaultMarketplaceService.java:838)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.reportInstallSuccess(CachingMarketplaceService.java:422)
+	at org.eclipse.epp.internal.mpc.ui.wizards.ProvisioningJobListener$1$1.run(ProvisioningJobListener.java:67)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2018-09-19 08:35:55.496
+!MESSAGE Service Unavailable
+!STACK 0
+org.apache.http.client.HttpResponseException: Service Unavailable
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:148)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:134)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:96)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:54)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.reportInstallSuccess(DefaultMarketplaceService.java:838)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.reportInstallSuccess(CachingMarketplaceService.java:422)
+	at org.eclipse.epp.internal.mpc.ui.wizards.ProvisioningJobListener$1$1.run(ProvisioningJobListener.java:67)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+!SESSION 2018-09-19 08:37:31.105 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=10.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/.eclipse_keyring
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-09-19 08:49:16.973
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: CucumberSelenium
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource already exists on disk: '/CucumberSelenium/target/test-classes/netFlixSignUp.feature'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:328)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:545)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:387)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:231)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:200)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:124)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:403)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:544)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:112)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:430)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2262)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:437)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:130)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2018-09-19 08:49:16.975
+!MESSAGE Resource already exists on disk: '/CucumberSelenium/target/test-classes/netFlixSignUp.feature'.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-19 08:49:19.398
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-19 08:49:19.408
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 4 0 2018-09-19 08:49:39.204
+!MESSAGE The proxied handler for 'org.agileware.natural.cucumber.ui.CucumberExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler' could not be loaded
+!STACK 1
+org.eclipse.core.runtime.CoreException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors ExtensionFactory: org.agileware.natural.cucumber.ui.CucumberExecutableExtensionFactory
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:59)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:350)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:231)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:127)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:80)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:862)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:220)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:255)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:112)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:92)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:471)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5853)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4159)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3692)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:1004)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:961)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1013)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:52)
+	... 56 more
+!SUBENTRY 1 org.agileware.natural.cucumber.ui 4 0 2018-09-19 08:49:39.206
+!MESSAGE Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors ExtensionFactory: org.agileware.natural.cucumber.ui.CucumberExecutableExtensionFactory
+!STACK 0
+com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:1004)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:961)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1013)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:52)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:350)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:231)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:127)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:80)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:862)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:220)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:255)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:112)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:92)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:471)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5853)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4159)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3692)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
